@@ -29,6 +29,12 @@
         width: 100%;
       }
 
+      @media (min-width: 280px) and (max-width: 640px) {
+        body, html {
+          overflow-x: auto;
+        }
+      }
+
       button {
         background-image: linear-gradient(to right, #4f46e5, #8b5cf6);
         /* indigo-600 to purple-500 */
@@ -316,6 +322,19 @@
         box-shadow: none
       }
 
+      .btn{
+        background-color: #FF8233;
+        color: white;
+        height: 48px;
+        width: fit-content;
+        padding: 16px 24px;
+         border-radius: 8px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-weight: 600;
+         text-decoration: none;
+      }
       progress {
         vertical-align: baseline
       }
@@ -1590,7 +1609,9 @@
           </ul>
         </li>
       </ol>
-     
+     <a class="btn" href="https://cal.com/Candexa.ai/30min" target="_blank">
+      Book a demo
+      </a>
     </div>
     <script>
       // Data from the report (same as in the interactive SPA)
